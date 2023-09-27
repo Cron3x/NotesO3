@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE DOC PUBLIC '-//KDE//DTD krita 2.0//EN' 'http://www.calligra.org/DTD/krita-2.0.dtd'>
+<DOC xmlns="http://www.calligra.org/DTD/krita" editor="Krita" syntaxVersion="2.0" kritaVersion="5.2.0">
+ <IMAGE mime="application/x-kra" name="doc1" y-res="600" profile="sRGB-elle-V2-srgbtrc.icc" height="7016" description="" x-res="600" colorspacename="RGBA" width="4961">
+  <layers>
+   <layer filename="layer2" locked="0" x="0" colorlabel="0" channelflags="" visible="1" intimeline="0" name="Vector Layer 1" opacity="255" y="0" nodetype="shapelayer" uuid="{99e51e7e-9e05-4cc4-8dd1-8f4eeb5deb43}" selected="true" collapsed="0" compositeop="normal"/>
+   <layer filename="layer3" channellockflags="" locked="0" x="0" colorlabel="0" channelflags="" visible="1" intimeline="1" onionskin="0" name="Paint Layer 1" opacity="255" y="0" nodetype="paintlayer" uuid="{00922e33-9735-4f6b-ba37-15df5741cae9}" collapsed="0" compositeop="normal" colorspacename="RGBA"/>
+   <layer filename="layer4" channellockflags="" locked="1" x="0" colorlabel="0" channelflags="" visible="1" intimeline="1" onionskin="0" name="Background" opacity="255" y="0" nodetype="paintlayer" uuid="{90c5050f-8cc5-45f3-860d-85af520eee5c}" collapsed="0" compositeop="normal" colorspacename="RGBA"/>
+  </layers>
+  <ProjectionBackgroundColor ColorData="AAAAAA=="/>
+  <GlobalAssistantsColor SimpleColorData="176,176,176,255"/>
+  <MirrorAxis>
+   <mirrorHorizontal type="value" value="0"/>
+   <mirrorVertical type="value" value="0"/>
+   <lockHorizontal type="value" value="0"/>
+   <lockVertical type="value" value="0"/>
+   <hideHorizontalDecoration type="value" value="0"/>
+   <hideVerticalDecoration type="value" value="0"/>
+   <handleSize type="value" value="32"/>
+   <horizontalHandlePosition type="value" value="64"/>
+   <verticalHandlePosition type="value" value="64"/>
+   <axisPosition x="2480.5" type="pointf" y="3508"/>
+  </MirrorAxis>
+  <Palettes/>
+  <resources/>
+  <animation>
+   <framerate type="value" value="24"/>
+   <range type="timerange" from="0" to="100"/>
+   <currentTime type="value" value="0"/>
+  </animation>
+ </IMAGE>
+</DOC>

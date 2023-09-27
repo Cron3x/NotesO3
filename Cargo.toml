@@ -1,5 +1,5 @@
 [package]
-name = "NotesO3"
+name = "Cyprs"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,4 +7,4 @@ edition = "2021"
 
 [dependencies]
 egui = { version = "0.23.0", features = ["serde", "color-hex"] }
-
+zip = "0.6"

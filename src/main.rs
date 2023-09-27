@@ -1,3 +1,7 @@
+mod loaders;
+
 fn main() {
-    println!("Hello, world!");
+    println!("Hi, Mom");
+
+    loaders::load_files();
 }
