@@ -13,5 +13,3 @@ A note taking app for school and written in rust
     - [ ] (onenote)
  - [ ] Safe file structure
  - [ ] usefull way of oranizing files
-
-I'd realy like to create my one filetype like docx, wich contains md files and some kind of 
