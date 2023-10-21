@@ -15,5 +15,5 @@ A note taking app for school and written in rust
  - [ ] usefull way of oranizing files
 
 
-###  o2 file: structure of project/notebook (name, hidden files, author, etc)
-### co2 file: compressed/exported project/notebook (just a zip but more funny)
+ o2 file: structure of project/notebook (name, hidden files, author, etc)
+co2 file: compressed/exported project/notebook (just a zip but more funny)
