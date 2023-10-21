@@ -1,5 +1,9 @@
 # NotesO3
-A note taking app for school and written in rust
+
+##very very VERY WIP
+
+I'm a student and this is my take on a note taking app. It's ment to replace OneNote for me, 'cause I don't realy like it from a note taking standpoint out and its Microsoft. 
+I tried other programms (e.g Obsidian), but none had the ability to draw, write and structure my notes how I want it.  
 
 ---
 
@@ -10,7 +14,7 @@ A note taking app for school and written in rust
     - [ ] pdf
     - [ ] md
     - [ ] txt
-    - [ ] (onenote)
+    - [ ] (onenote?)
  - [ ] Safe file structure
  - [ ] usefull way of oranizing files
 
