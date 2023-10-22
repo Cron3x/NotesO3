@@ -19,6 +19,6 @@ I tried other programms (e.g Obsidian), but none had the ability to draw, write 
  - [ ] usefull way of oranizing files
 
 
-NoteO3 files:
+Cyprs files:
 -  o2 file: structure of project/notebook (name, hidden files, author, etc)
 - co2 file: compressed/exported project/notebook (just a zip but more funny)
