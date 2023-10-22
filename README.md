@@ -5,6 +5,8 @@
 I'm a student and this is my take on a note taking app. It's ment to replace OneNote for me, 'cause I don't realy like it from a note taking standpoint out and its Microsoft. 
 I tried other programms (e.g Obsidian), but none had the ability to draw, write and structure my notes how I want it.  
 
+
+Why Cyprs? Cyperus is part of the latin name for (papyrus)[https://en.wikipedia.org/wiki/Papyrus].
 ---
 
 # Goals
