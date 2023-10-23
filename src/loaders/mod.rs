@@ -1,5 +1,4 @@
 use std::{fs, path::PathBuf};
-use std::rc::Rc;
 use std::io::Read;
 
 mod kra;
@@ -9,16 +8,17 @@ pub fn load_files(){
      let paths = fs::read_dir("./files/").unwrap();
 
     for path in paths {
-        //println!("Name: {}", &path.unwrap().path().display());
-
-        let p = path.unwrap().path().to_path_buf();
-
+        let path = path.unwrap().path();
+        println!("Name: {}", &path.display());
+        
+        let p = path.to_path_buf();
         match p.is_file() {
             true => {
                 handle_file(p).unwrap()
             }
             false => {eprintln!("UNIPLEMENTED: folders and symlinks")}
         }
+        println!();
     }
 
     //let fname = std::path::Path::new(&*args[1]);
@@ -50,10 +50,10 @@ impl SupportedFileType{
                             &_ => {}
                         }
                     }
-                    Err(_) => {}
+                    Err(e) => {return Err(e.to_string())}
                 }
             },
-            Err(_) => {}
+            Err(e) => {return Err(e.to_string())}
         }
 
         return Err("Unsuported File".to_owned())
@@ -68,9 +68,6 @@ fn handle_file(file_path: PathBuf) -> Result<(), String>{
     //  ...
 
     let file = fs::File::open(file_path).unwrap();
-
-    let ft = file.metadata().unwrap().file_type();
-    println!("{:#?}",ft);
 
     match SupportedFileType::identify_filetype(&file) {
         Ok(t) => match t {
