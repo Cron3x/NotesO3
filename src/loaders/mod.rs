@@ -4,25 +4,19 @@ use std::io::Read;
 mod kra;
 
 pub fn load_files(){
-
      let paths = fs::read_dir("./files/").unwrap();
-
-    for path in paths {
-        let path = path.unwrap().path();
-        println!("Name: {}", &path.display());
-        
-        let p = path.to_path_buf();
-        match p.is_file() {
-            true => {
-                handle_file(p).unwrap()
-            }
-            false => {eprintln!("UNIPLEMENTED: folders and symlinks")}
-        }
-        println!();
+     for path in paths {
+          let path = path.unwrap().path();
+          println!("Name: {}", &path.display());
+          let p = path.to_path_buf();     
+          match p.is_file() {
+               true => {
+                    handle_file(p).unwrap()
+               }
+               false => {eprintln!("UNIPLEMENTED: folders and symlinks")}
+          }
+          println!();
     }
-
-    //let fname = std::path::Path::new(&*args[1]);
-    //let file = fs::File::open(fname).unwrap();
 }
 
 enum SupportedFileType{
@@ -55,24 +49,15 @@ impl SupportedFileType{
             },
             Err(e) => {return Err(e.to_string())}
         }
-
         return Err("Unsuported File".to_owned())
     }
-
 }
 fn handle_file(file_path: PathBuf) -> Result<(), String>{
-    //cases:
-    //  txt
-    //  zip
-    //  img
-    //  ...
-
     let file = fs::File::open(file_path).unwrap();
 
     match SupportedFileType::identify_filetype(&file) {
         Ok(t) => match t {
             SupportedFileType::Kra => {
-
                 let a = zip::ZipArchive::new(file).unwrap();
                 kra::unpack(a)
             }
@@ -82,7 +67,6 @@ fn handle_file(file_path: PathBuf) -> Result<(), String>{
         Err(e) => {
             eprintln!("UNSUPORTED: {}", e)
         }
-
     }
     Ok(())
 }
