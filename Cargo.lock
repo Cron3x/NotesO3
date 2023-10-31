@@ -3,22 +3,6 @@
 version = 3
 
 [[package]]
-name = "Cyprs"
-version = "0.1.0"
-dependencies = [
- "iced",
- "iced_web",
- "quick-xml 0.31.0",
- "reqwest",
- "scraper",
- "serde",
- "serde_json",
- "wasm-bindgen",
- "web-sys",
- "zip",
-]
-
-[[package]]
 name = "ab_glyph"
 version = "0.2.22"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -575,6 +559,22 @@ checksum = "13b588ba4ac1a99f7f2964d24b3d896ddc6bf847ee3855dbd4366f058cfcd331"
 dependencies = [
  "quote",
  "syn 2.0.38",
+]
+
+[[package]]
+name = "cyprs"
+version = "0.1.0"
+dependencies = [
+ "iced",
+ "iced_web",
+ "quick-xml 0.31.0",
+ "reqwest",
+ "scraper",
+ "serde",
+ "serde_json",
+ "wasm-bindgen",
+ "web-sys",
+ "zip",
 ]
 
 [[package]]

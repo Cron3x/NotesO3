@@ -1,26 +1,19 @@
 mod loaders;
 mod ui;
+mod theme;
 
 use iced::{
-    theme::{self,Theme},
+    theme::{self, Theme},
     Color,
     executor, Application, Command, Element, Settings,
     widget::{
-        Text, Column
-    }
+        Text, Column, Space, Row, Container
+    }, Length, Alignment, alignment::Horizontal, Padding, Pixels, Renderer
 };
 
 fn main() -> iced::Result {
     //loaders::load_files();
     App::run( Settings::default())
-}
-
-#[derive(Debug, PartialEq, Eq, Clone, Copy)]
-enum ThemeType {
-    Light,
-    Catppuccin,
-    Pop,
-    Custom,
 }
 
 #[derive(Debug, PartialEq, Eq, Clone, Copy)]
@@ -31,6 +24,8 @@ enum Route {
 #[derive(Debug, PartialEq, Eq, Clone, Copy)]
 enum Message {
     FetchedFS(bool),
+    FileDialog,
+    StyleBarToggle,
 }
 
 struct App {
@@ -55,7 +50,7 @@ impl Application for App {
                         theme::Palette {
                             background: Color::from_rgb8(30,30,46),
                             text: Color::from_rgb8(205,214,244),
-                            primary: Color::from_rgb(0.5, 0.5, 0.0),
+                            primary: Color::from_rgb8(17, 17, 27),
                             success: Color::from_rgb(0.0, 1.0, 0.0),
                             danger: Color::from_rgb(1.0, 0.0, 0.0),
                         }
@@ -71,16 +66,28 @@ impl Application for App {
     }
 
     fn view(&self) -> Element<Message>{
-        Column::new()
-            .push(Text::new(format!("Hello World")).size(12))
-            .into()
+        let r = Row::new()
+            .padding(Padding::from(10))
+            .push(Text::new(format!("File")).size(20))
+            .push(Text::new(format!("◉◉◉")).size(20));
+        Container::new(r)
+            .width(Length::Fill)
+            .style(theme::Container::Box)
+        .into()
     }
 
     fn update(&mut self, msg: Message) -> Command<Message> {
         match msg {
             Message::FetchedFS(_) => {
             }
+            _ => {}
         }
         Command::none()
     }
 }
+
+struct Topbar {}
+
+struct Canvas {}
+
+struct Sidebar {}
