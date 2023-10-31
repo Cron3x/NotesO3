@@ -19,6 +19,7 @@ Why Cyprs? Cyperus is part of the latin name for [papyrus](https://en.wikipedia.
     - [ ] (onenote?)
  - [ ] Safe file structure
  - [ ] usefull way of oranizing files
+ - [ ] "Hotkey mod by pressing ctrl+space" (a bit like vim normal mode)
 
 
 Cyprs files:
