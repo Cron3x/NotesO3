@@ -11,11 +11,14 @@ Why Cyprs? Cyperus is part of the latin name for [papyrus](https://en.wikipedia.
 
 # Goals
  - [ ] Ability to edit:
+    - [ ] kra
     - [ ] docx
     - [ ] odt
     - [ ] pdf
     - [ ] md
     - [ ] txt
+    - [ ] norg
+    - [ ] images
     - [ ] (onenote?)
  - [ ] Safe file structure
  - [ ] usefull way of oranizing files
