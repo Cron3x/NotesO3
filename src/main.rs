@@ -1,6 +1,5 @@
 mod loaders;
 mod ui;
-mod theme;
 
 use iced::{
     theme::{self, Theme},
@@ -47,18 +46,18 @@ impl Application for App {
         (
             App{
                 theme: Theme::custom(
-                        theme::Palette {
-                            background: Color::from_rgb8(30,30,46),
-                            text: Color::from_rgb8(205,214,244),
-                            primary: Color::from_rgb8(17, 17, 27),
-                            success: Color::from_rgb(0.0, 1.0, 0.0),
-                            danger: Color::from_rgb(1.0, 0.0, 0.0),
-                        }
-                    ),
-                route: Route::Notes,
+                           theme::Palette {
+                               background: Color::from_rgb8(30,30,46),
+                               text: Color::from_rgb8(205,214,244),
+                               primary: Color::from_rgb8(17, 17, 27),
+                               success: Color::from_rgb(0.0, 1.0, 0.0),
+                               danger: Color::from_rgb(1.0, 0.0, 0.0),
+                           }
+                           ),
+                           route: Route::Notes,
             },
             Command::perform(loaders::load_files(), Message::FetchedFS),
-        )
+            )
     }
 
     fn theme(&self) -> Theme{
@@ -73,7 +72,7 @@ impl Application for App {
         Container::new(r)
             .width(Length::Fill)
             .style(theme::Container::Box)
-        .into()
+            .into()
     }
 
     fn update(&mut self, msg: Message) -> Command<Message> {
@@ -87,7 +86,5 @@ impl Application for App {
 }
 
 struct Topbar {}
-
-struct Canvas {}
 
 struct Sidebar {}
