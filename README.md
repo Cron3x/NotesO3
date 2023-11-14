@@ -24,7 +24,7 @@ Why Cyprs? Cyperus is part of the latin name for [papyrus](https://en.wikipedia.
  - [ ] usefull way of oranizing files
  - [ ] "Hotkey mode by pressing ctrl+space" (a bit like vim normal mode)
  - [ ] Git integration, for working with other people or on different devices
- - [ ] Integrate Cam and the ability to scan paper for text (opencv?)
+ - [ ] Integrate Cam and the ability to scan paper for text (opencv + tesseract?)
 
 
 Cyprs files:
